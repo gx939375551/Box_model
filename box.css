@@ -1,0 +1,106 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*标准盒模型*/
+
+.box_1_center {
+    width: 100px;
+    height: 100px;
+    background-color: #00b7ee;
+}
+
+.box_1 {
+    padding: 10px;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: #ee8009;
+    margin: 30px 30px;
+}
+
+
+/*怪异盒模型*/
+
+.box_2_center {
+    width: 100px;
+    height: 100px;
+    background-color: #09eecb;
+    margin: 13px auto;
+}
+
+.box_2 {
+    padding: 10px;
+    border: 3px solid black;
+    width: 126px;
+    height: 126px;
+    background-color: #ee095a;
+    margin: 30px 30px;
+}
+
+
+/*旧版弹性盒模型*/
+
+.box_3 {
+    display: -webkit-box;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    border: 3px solid black;
+    margin: 30px 30px;
+    background-color: #ef720c;
+}
+/*块a*/
+.box_3_a_center {
+    -webkit-box-flex: 1;
+    background-color: #0cefa2;
+}
+/*块b*/
+.box_3_b_center {
+    -webkit-box-flex: 1;
+    background-color: #e70cef;
+}
+/*块c*/
+.box_3_c_center {
+    -webkit-box-flex: 1;
+    background-color: #ef2c0c;
+}
+
+
+/*新版盒子模型*/
+
+.box_4 {
+    display: -webkit-flex;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    margin: 30px 30px;
+    background-color: #f30a20;
+    border: 3px solid black;
+}
+/*块a*/
+.box_4_a_center {
+    -webkit-flex-grow: 1;
+    -webkit-order: 2;
+    background-color: black;
+    color: white;
+}
+/*块b*/
+.box_4_b_center {
+    -webkit-flex-grow: 1;
+    -webkit-order: 3;
+    background-color: orange;
+}
+/*块c*/
+.box_4_c_center {
+    -webkit-flex-grow: 2;
+    -webkit-order: 1;
+    background-color: green;
+}
+
+p {
+    margin-left: 30px;
+}
